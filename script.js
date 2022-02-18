@@ -16,10 +16,9 @@ btn2.addEventListener('click',()=>{
     singup.style.display='none';
 })
 
-// setTimeout(()=>{
-//     var myMusic = document.querySelector('#music').play();
-// },5000);
-
+document.body.onload=()=>{
+    var myMusic = document.querySelector('#music').play();
+}
 stop.addEventListener('click',()=>{
     document.querySelector('#music').pause();
     stop.style.display='none';
