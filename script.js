@@ -17,9 +17,11 @@ btn2.addEventListener('click',()=>{
 })
 
 var myMusic = document.querySelector('#music');
-window.onload=()=>{
+
+document.body.onload=()=>{    
     myMusic.play();
 }
+
 stop.addEventListener('click',()=>{
     myMusic.pause();
     stop.style.display='none';
