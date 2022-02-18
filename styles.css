@@ -101,3 +101,10 @@ form a{
 #one,#two{
     cursor: pointer;
 }
+
+.pause{
+    margin: 10px;
+    position: -webkit-sticky;
+    position: fixed;
+    bottom: 10%;
+}
