@@ -43,6 +43,8 @@ body{
 }
 li{
     list-style: none;
+    background-color: white;
+    padding:2px;
 }
 li:hover{
     border-bottom: 1px solid white;
@@ -53,7 +55,13 @@ li:hover{
 }
 .nav-items{
     /* background-color: rgb(114, 54, 54); */
-    background-image: linear-gradient(to left bottom, #4388ff, #5384fc, #607ff9, #6c7bf5, #7676f1);
+    /* background-image: linear-gradient(to left bottom, #4388ff, #5384fc, #607ff9, #6c7bf5, #7676f1); */
+    /* background-image: url('wave.png'); */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    width: 100%;
+    /* background-size: cover; */
+    background-image: url('menu.png');
     padding: 10px;
     margin: 0;
 }
@@ -63,10 +71,14 @@ li:hover{
     top: 0;
 }
 .nav-items{
-    color: white;
+    text-align: center;
+    color:#1d62c8;
+    font-weight: 700;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 /* --------------------------section2-------------------------- */
 .section2{
@@ -74,7 +86,12 @@ li:hover{
     width: 100%;
     height: 100vh;
     /* background-color: rgb(0, 0, 255); */
-    background-image: radial-gradient(circle, #1d62c8, #0097d3, #4cbfc6, #b6dfcb, #fdfff8);
+    /* background-image: radial-gradient(circle, #1d62c8, #0097d3, #4cbfc6, #b6dfcb, #fdfff8); */
+    background-image: url('back2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     display: flex;
     color: white;
     text-align: center;
@@ -107,4 +124,45 @@ form a{
     position: -webkit-sticky;
     position: fixed;
     bottom: 10%;
+}
+#logo{
+    border-radius: 50%;
+    cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+   #logo{
+       display: none;
+   }
+  }
+
+/* section 3 */
+.section3{
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    /* background-image: radial-gradient(circle, #1d62c8, #0097d3, #4cbfc6, #b6dfcb, #fdfff8); */
+    background-image: url("1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    color: white;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section3 h1{
+    font-family: 'Dongle', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 3rem;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    color: white;
+}
+.section3 input{
+    padding: 10px;
+    margin: 10px;
 }

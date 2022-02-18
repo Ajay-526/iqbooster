@@ -16,9 +16,6 @@ btn2.addEventListener('click',()=>{
     singup.style.display='none';
 })
 
-document.body.onload=()=>{
-    var myMusic = document.querySelector('#music').play();
-}
 stop.addEventListener('click',()=>{
     document.querySelector('#music').pause();
     stop.style.display='none';

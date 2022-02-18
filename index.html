@@ -20,16 +20,16 @@
     />
   </head>
   <body>
-    <audio id="music" autoplay="autoplay">
+    <audio id="music">
         <source src="audio.mp3" type="audio/ogg">
     </audio>
     <div class="container-fluid"> 
         <div class="nav-bar">
             <ol class="nav-items">
+                <li><img id="logo" src="logo.png" alt="logo" width="80px" height="80px" onclick="window.location='#'"></li>
                 <li><a href="#" style="text-decoration:none; color:inherit;">Home</a></li>
                 <li><a href="#" style="text-decoration:none; color:inherit;">About</a></li>
-                <li><a href="#" style="text-decoration:none; color:inherit;">Contact</a></li>
-                <li><a href="#" style="text-decoration:none; color:inherit;">Get Connected</a></li>
+                <li><a href="#3" style="text-decoration:none; color:inherit;">Contact</a></li>
             </ol>
         </div>
       <div class="section1">
@@ -52,6 +52,15 @@
             <input type="submit" class="btn btn-secondary" value="Sign-up">
             <p>Have an Account ? <a style="text-decoration:none; color:inherit;" id="two">Sign In Here!</a></p>
           </div>
+      </div>
+      <div class="section3" id="3">
+        <h1>Get in touch with us!</h1>
+        <div class="contact">
+          <input type="text" placeholder="enter your full name" name="contacter-name"><br>
+          <input type="mail" placeholder="enter your email id" name="contacter-mail"><br>
+          <input type="text" name="message" placeholder="enter your message" id="textarea"><br>
+          <input type="submit" class="btn btn-info" value="Submit Message">
+        </div>
       </div>
     </div>
     <div class="pause"><button class="btn btn-danger stop"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pause-circle-fill" viewBox="0 0 16 16">
