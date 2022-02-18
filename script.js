@@ -22,3 +22,4 @@ stop.addEventListener('click',()=>{
     myMusic.pause();
     stop.style.display='none';
 })
+
