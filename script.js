@@ -16,10 +16,12 @@ btn2.addEventListener('click',()=>{
     singup.style.display='none';
 })
 
-var myMusic = document.querySelector('#music');
+// setTimeout(()=>{
+//     var myMusic = document.querySelector('#music').play();
+// },5000);
 
 stop.addEventListener('click',()=>{
-    myMusic.pause();
+    document.querySelector('#music').pause();
     stop.style.display='none';
 })
 
