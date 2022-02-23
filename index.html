@@ -26,7 +26,7 @@
     <div class="container-fluid"> 
         <div class="nav-bar">
             <ol class="nav-items">
-                <li><img id="logo" src="logo.png" alt="logo" width="80px" height="80px" onclick="window.location='#'"></li>
+                <img id="logo" src="logo.png" alt="logo" width="80px" height="80px" onclick="window.location='#'">
                 <li><a href="#" style="text-decoration:none; color:inherit;">Home</a></li>
                 <li><a href="#" style="text-decoration:none; color:inherit;">About</a></li>
                 <li><a href="#3" style="text-decoration:none; color:inherit;">Contact</a></li>
@@ -40,16 +40,18 @@
       <div class="section2" id="sec2">
           <h1>Get Login to IQ-Booster</h1>
           <div class="signin">
-              <input type="email" name="sign-in-email" id="sign-in-email" placeholder="enter your mail id">
-              <input type="password" name="sign-in-pass" id="sign-in-pass" placeholder="enter your password"><br>
-              <input type="submit" class="btn btn-secondary" value="Sign-in"><br><br><br>
+            <form action="/sign-in" method="post">
+              <input type="email" required name="signinemail" id="sign-in-email" placeholder="enter your mail id">
+              <input type="password" required name="signinpass" id="sign-in-pass" placeholder="enter your password"><br>
+              <input type="submit" class="btn btn-secondary" value="Sign-in"></form><br><br><br>
               <p>Dont Have an Account ? <a style="text-decoration:none; color:inherit;" id="one">Sign Up Here!</a></p>
           </div>
           <div class="signup">
-            <input type="email" name="sign-up-email" id="sign-up-email" placeholder="enter your mail id"><br>
-            <input type="password" name="sign-up-pass" id="sign-up-pass" placeholder="enter your password"><br>
-            <input type="password" name="pass2" id="pass2" placeholder="re-enter your password"><br>
-            <input type="submit" class="btn btn-secondary" value="Sign-up">
+            <form action="/sign-up" method="post" onsubmit="return validateForm()">
+            <input type="email" required name="signupemail" id="sign-up-email" placeholder="enter your mail id"><br>
+            <input type="password" required name="pass1" id="pass1" placeholder="enter your password"><br>
+            <input type="password" required name="pass2" id="pass2" placeholder="re-enter your password"><br>
+            <input type="submit" class="btn btn-secondary" value="Sign-up"></form>
             <p>Have an Account ? <a style="text-decoration:none; color:inherit;" id="two">Sign In Here!</a></p>
           </div>
       </div>
